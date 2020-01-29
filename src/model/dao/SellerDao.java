@@ -2,6 +2,7 @@ package model.dao;
 
 import java.util.List;
 
+import model.entities.Department;
 import model.entities.Seller;
 
 public interface SellerDao {
@@ -13,5 +14,6 @@ public interface SellerDao {
 	//Se existir, vai retornar o obj, se não, vai retornar nulo
 	
 	List<Seller> findAll(); //retorna todos os vendedores
+	List<Seller> findByDepartment(Department department);
 
 }
